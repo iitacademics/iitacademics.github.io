@@ -1,7 +1,627 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+
+<html class="x-border-box x-quirks">
+<head>
+<title>IIT Bombay Grade Portal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<style rel="stylesheet" type="text/css">
+
+/* Layout Stylesheet */ 
+
+
+#outer {
+ text-align:left;
+ margin:auto;
+ }
+
+#hdr {
+ height:40px;
+ color: black;
+ }
+
+#bar {
+ background-image:url("/stylesheets/bg.gif");
+ height:25px;
+ color: #333333;
+ border:solid #000000;	
+ border-width:1px 0 1px 0;
+ }
+
+#bodyblock {
+ background: white;
+ font-family: Times New Roman, Arial, Verdana, sans-serif;
+ font-size:12px;
+ color: black;
+ padding:0;
+ }
+
+#l-col {
+ float:left;
+ background:#dcdcdc;
+ width:145px;
+ }
+
+#cont {
+ width:495px;
+ background:#ffffff;
+ border:solid #000000;	
+ border-width:0 0 0 1px;
+ text-align:left;
+ }
+
+#ftr {
+ background-image:url("/stylesheets/bg.gif");
+ background-color:#C3D9FF;
+ height:25px;
+ color: black;
+ border:solid black;
+ border-width:1px 0 1px 0;
+ margin:0;
+ }
+
+
+body {
+ /*background-image:url("/stylesheets/bg1.gif");*/
+background-color: #FFFFFF;
+font-family: Verdana,Times New Roman, Arial, Verdana, sans-serif;
+font-size:14px;
+color: #00008B;
+}
+                                                                                                                                                                                                                                                           
+a { font-family: Verdana,Times New Roman, Arial, sans-serif; font-size:10px; color: blue; text-decoration: underline}
+
+A:link {font-family: Verdana,Times New Roman, Arial,  sans-serif;COLOR: #0033CC; TEXT-DECORATION: underline; font-size:12px}
+
+A:visited {font-family: Verdana,Times New Roman, Arial,  sans-serif;COLOR: #0033CC; TEXT-DECORATION: underline; font-size:12px}
+
+A:hover {font-family: Verdana,Times New Roman, Arial,  sans-serif;COLOR: #0033CC; TEXT-DECORATION: underline; font-size:12px}
+                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                           
+h1 { font-family: Verdana,Times New Roman; font-size:18px;  color: #A52A2A }
+h2 { font-family: Verdana,Times New Roman; font-size:16px;  color: #A52A2A }
+                                                                                                                                                                                                                                                           
+hr{ color:brown; background-color:tan; width:90%; height:2px; }
+                                                                                                                                                                                                                                                           
+table.ss {
+font-family: Verdana,Times New Roman;
+font-size:14px;
+color: #000000;
+border: grey solid 0px;
+border-bottom: grey solid 0px;
+border-right: grey solid 0px;
+background-color: white;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+                                                                                                                                                                                                                                                           
+.note {
+font-family: Verdana,Arial, Verdana, sans-serif;
+color: purple;
+font-weight: bold;
+}
+                                                                                                                                                                                                                                                           
+.content {
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.d-name a:link {
+  color:         darkgreen;
+}
+                                                                                                                                                                                                                                                           
+.detail-even {
+ background-color: #E1D3DF;
+ color:black;
+}
+.detail-odd {
+  background-color: #D8E1D1;
+ color:black;
+}
+
+.detail-changed { 
+  background-color: #FFaaaa;
+ color:black;
+}
+
+.detail-separate { 
+  background-color: grey;
+}
+                                                                                                                                                                                                                                                           
+table.ss tr{
+	background-color:#f5f5f5;
+	font-size:100%;
+}
+
+table.ss th {
+/* background-image:url("/stylesheets/bg1.gif");*/
+background:#A9C5EB; color:black; 
+font-family:verdana;  padding:1px}
+
+table.ss td{background-color:#f5f5f5;}
+
+table.ss table td{background-color:#f5f5f5;}
+
+
+label{ font-weight:bold;}
+input, select, textarea {
+	font-family:Verdana,lucida,arial,sans-serif;
+	font-size:1em;
+	color:black;
+	background-color: #fffff0;
+	border: 1px solid #9CA896;
+	margin-bottom:3px;
+}
+
+.dyn-source {
+  display: none;
+  background: #FFE;
+  color: #A52A2A;
+  border: 1px dotted black;
+  margin: 0.5em 2em 0.5em 2em;
+  padding: 0.5em;
+}
+.messages {
+  background: #FFE;
+  color: #A52A2A;
+  border: 1px dotted black;
+  margin: 0.5em 2em 0.5em 2em;
+  padding: 0.5em;
+}
+
+</style>
+<style rel="stylesheet" type="text/css">
+
+
+/* Presentation Stylesheet 
+
+h3, p {
+ margin:0;
+ padding:15px;
+ }
+
+h4 {
+ margin:0; 
+ padding: 5px 0;
+ }
+ 
+p:first-letter {
+ font-size: 80%; 
+ font-weight: bold;
+ color:blue;
+ }
+*/
+</style>
+
+
+
+
+
+
+
+
+
+
+		
+</head><body id="ext-gen1018" class="x-body x-webkit x-chrome x-reset">
+<script>
+
+$( function() {
+	  $( "#tabs" ).tabs();
+	} );
+	
+function execute(op){
+	document.forms[0].flag.value=op;
+	document.forms[0].method="POST";
+	document.forms[0].submit();
+	return true;
+}
+
+function toggle(v)
+{
+	if(document.getElementById("alum").style.display=="none")
+	{
+		document.getElementById("alum").style.display="block";
+	}
+	else	
+	{
+		document.getElementById("alum").style.display="none";
+	}
+}	
+</script>
+
+
+<style>
+
+td
+{
+font-family: Calibri;
+}
+
+
+body
+{
+font-family: Calibri;
+}
+
+
+a
+{
+font-family: Calibri;
+}
+
+li
+{
+line-height: 1.5;
+
+}
+
+
+#SGrade
+{
+cursor: pointer;
+}
+
+ul.ins li
+{
+/*  line-height: 1.5;  */
+ padding-bottom:8px;
+list-style: decimal;
+font-size: 12px;
+font-family: Calibri;
+margin-bottom: 1px;
+}
+
+</style>
+
+
+
+
+
+<table width="100%" class="ss">
+	<tbody><tr>
+		<td>
+			<table width="100%" class="ss">
+				<tbody><tr>
+					<th>Roll no</th>
+					<td>200100088</td>
+					<th>Name </th>
+					<td>K S Varun</td>
+				</tr>
+				<tr>
+					<th>Department</th>
+					<td>Mechanical Engineering</td>
+					<th>Program</th>
+					<td>
+						B.Tech.
+						
+					</td>
+				</tr>
+				
+						<tr>
+						<th colspan="2">Category	
+						
+						</th><td>
+							2						
+						</td>
+						</tr>
+					
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+
+
+
+
+
+<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+	<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        </ul>
+
+
+
+
+<div id="tabs-0" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false">
+
+<a name="performanceSummary"><h2>Academic Performance Summary</h2></a>
+<table width="100%" class="ss">
+	<tbody><tr>
+		<th>Year</th> 
+		<th>Sem</th> 
+		<th>SPI</th> 
+		<th>CPI</th> 
+		<th>Sem Credits <br> Used for SPI</th>
+		<th>Completed Semester Credits </th> 
+		<th>Cumulative Credits <br> Used for CPI</th>
+		<th>Completed Cumulative Credits</th> 
+	</tr>
+	
+	
+		<tr>
+			<td>2020</td>
+			<td>Spring</td>
+			<td>7.61</td>
+			<td>7.97</td>
+			<td>31.0</td>
+			
+			<td>31.0</td>
+			<td>59.0</td>
+			<td>59.0</td>
+		</tr>
+	
+		<tr>
+			<td>2020</td>
+			<td>Autumn</td>
+			<td>8.36</td>
+			<td>8.36</td>
+			<td>28.0</td>
+			
+			<td>28.0</td>
+			<td>28.0</td>
+			<td>28.0</td>
+		</tr>
+	
+</tbody></table>
+
+<!-- requires initialised variable rollno -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<a name="semDetails"><h2>Semester-wise Details</h2></a>
+	<br>
+	 <font color="red">*This registration is subject to approval(s) from faculty advisor/Course Instructor/Academic office.</font> 
+	
+	
+		<h3>Year/Semester: 2020-21/Spring  </h3>
+		
+		<table width="100%" class="ss">
+			<tbody><tr>
+				<td align="center" colspan="6">
+				
+				
+				</td>
+			</tr>
+			<tr>
+				<th>Course Code</th> 
+				<th width="60%">Course Name</th>
+				<th>Credits</th>
+				<th>Tag</th>
+				<th>Grade</th>
+				<th>Credit/Audit</th>
+			</tr>
+			
+				<tr style="">
+					<td>BB 101 </td>
+					<td>Biology</td>
+					<td>6.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>CE 102 </td>
+					<td>Engineering Mechanics</td>
+					<td>6.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						AB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>MA 106 </td>
+					<td>Linear Algebra</td>
+					<td>4.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>MA 108 </td>
+					<td>Differential Equations</td>
+					<td>4.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						CD 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>ME 119 </td>
+					<td>Engineering Graphics &amp; Drawing</td>
+					<td>5.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>NOCS02 </td>
+					<td>NCC/NSS/NSO</td>
+					<td>0.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						PP 
+						
+					</td>
+					<td>N</td>
+				</tr>
+			
+				<tr style="">
+					<td>PH 108 </td>
+					<td>Basics of Electricity &amp; Magnetism</td>
+					<td>6.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BC 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+		</tbody></table>
+	
+		<h3>Year/Semester: 2020-21/Autumn  </h3>
+		
+		<table width="100%" class="ss">
+			<tbody><tr>
+				<td align="center" colspan="6">
+				
+				
+				</td>
+			</tr>
+			<tr>
+				<th>Course Code</th> 
+				<th width="60%">Course Name</th>
+				<th>Credits</th>
+				<th>Tag</th>
+				<th>Grade</th>
+				<th>Credit/Audit</th>
+			</tr>
+			
+				<tr style="">
+					<td>CH 105 </td>
+					<td>Organic &amp; Inorganic Chemistry</td>
+					<td>4.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>CH 107 </td>
+					<td>Physical Chemistry</td>
+					<td>4.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>CS 101 </td>
+					<td>Computer Programming and Utilization</td>
+					<td>6.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						AB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>MA 109 </td>
+					<td>Calculus I</td>
+					<td>4.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						AB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>MA 111 </td>
+					<td>Calculus II</td>
+					<td>4.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+				<tr style="">
+					<td>NOCS01 </td>
+					<td>NCC/NSS/NSO</td>
+					<td>0.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						PP 
+						
+					</td>
+					<td>N</td>
+				</tr>
+			
+				<tr style="">
+					<td>PH 107 </td>
+					<td>Quantum Physics and Application</td>
+					<td>6.0</td>
+					<td>Core course</td>
+					<td align="center">
+					
+						BB 
+						
+					</td>
+					<td>C</td>
+				</tr>
+			
+		</tbody></table>
+	
+	
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</body></html>
